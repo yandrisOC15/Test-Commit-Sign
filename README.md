@@ -25,3 +25,7 @@ Expected result: `%G?` reports `G` (good signature) and the signer is
 ## Signed objects
 
 - `v0.1.0` — signed tag
+
+## Notes
+
+This repository is public; internal documentation stays local and is excluded via `.git/info/exclude`.
