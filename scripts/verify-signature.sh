@@ -18,7 +18,7 @@ check_commit() {
 
 check_tag() {
   local tag="$1" output
-  if output=$(git tag -v "$tag" 2>&1) && printf '%s' "$output" | grep -q 'Good signature'; then
+  if output=$(LC_ALL=C git tag -v "$tag" 2>&1) && printf '%s' "$output" | grep -q 'Good signature'; then
     printf 'OK    %-10s good signature\n' "$tag"
   else
     printf 'FAIL  %-10s %s\n' "$tag" "$(printf '%s' "$output" | tail -n 1)"
