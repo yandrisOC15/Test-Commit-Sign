@@ -29,3 +29,7 @@ Expected result: `%G?` reports `G` (good signature) and the signer is
 ## Notes
 
 This repository is public; internal documentation stays local and is excluded via `.git/info/exclude`.
+
+## Key hygiene
+
+The GPG user ID was sanitized to `Yandris Rivera Torres <yrivera@oc15.com>`; the key fingerprint is unchanged.
